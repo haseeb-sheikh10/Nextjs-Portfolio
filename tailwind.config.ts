@@ -20,11 +20,15 @@ module.exports = {
     extend: {
       colors: {
         black: {
-          default: "#000",
+          DEFAULT: "#000",
           100: "#000319",
         },
         primary: "#52A3FF",
         secondary: "#A67AF8",
+        card: {
+          bg: "#04071d",
+          border: "#363749",
+        },
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

@@ -1,7 +1,8 @@
-import Grid from "@/components/Grid";
+import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
-import { navItems } from "@/constants/navItems";
+import { navItems } from "@/data";
 
 export default function Home() {
   return (
@@ -9,7 +10,22 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNavbar navItems={navItems} />
         <Hero />
-        <Grid></Grid>
+        {/* <About /> */}
+        {/* <Projects /> */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="card-bg rounded-3xl relative p-4 dark:border-card-border/[0.4] border">
+            <h1>haseeb</h1>
+          </div>
+          <div className="card-bg rounded-3xl relative p-4 dark:border-card-border/[0.4] border">
+            <h1>haseeb</h1>
+          </div>
+          <div className="card-bg rounded-3xl relative p-4 dark:border-card-border/[0.4] border">
+            <h1>haseeb</h1>
+          </div>
+          <div className="card-bg rounded-3xl relative p-4 dark:border-card-border/[0.4] border">
+            <h1>haseeb</h1>
+          </div>
+        </div>
       </div>
     </main>
   );
